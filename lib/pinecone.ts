@@ -38,7 +38,6 @@ export async function loadS3IntoPinecone(fileKey: string) {
 
 }
 
-async function embedDocuments() {}
 
 export const truncateStringByBytes = (str: string, bytes: number) => {
   const enc = new TextEncoder();
