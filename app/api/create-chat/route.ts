@@ -1,4 +1,4 @@
-import { loadS3IntoPinecone } from "@/lib/Pincone";
+import { loadS3IntoPinecone } from "@/lib/pinecone";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request, res: Response) {
@@ -7,9 +7,9 @@ export async function POST(req: Request, res: Response) {
     const { file_key, file_name } = body;
     console.log(file_key, file_name);
 
-    await loadS3IntoPinecone(file_key);
+    const pages = await loadS3IntoPinecone(file_key);
 
-    return NextResponse.json({ message: "success" });
+    return NextResponse.json({ pages });
   } catch (error) {
     console.error(error);
     return NextResponse.json(
