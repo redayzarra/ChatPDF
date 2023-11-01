@@ -32,8 +32,8 @@ export default async function Home() {
               <Link href="/sign-in">
                 <Button>
                   {" "}
-                  <LogInIcon className="mr-2" />
-                  Get Started!
+                  <LogInIcon className="mr-2 w-4 h-4" />
+                  Login to Get Started!
                 </Button>
               </Link>
             )}
