@@ -24,6 +24,37 @@ export default async function Home() {
           <div className="flex mt-2">
             {isAuth && <Button>Go to Chats</Button>}
           </div>
+          <div className="flex mt-2">
+            {isAuth && (
+              <Button>
+                Join Million of Students who want to make the world a much
+                better place
+              </Button>
+            )}
+          </div>
+          <div className="flex mt-2">
+            {isAuth && (
+              <Button>
+                You can even go to chats a try to build something incredible
+                that you just absoltuely love.
+              </Button>
+            )}
+          </div>
+          <div className="flex mt-2">
+            {isAuth && (
+              <Button>
+                You can even go to chats a try to build something incredible
+                that you just absoltuely love.
+              </Button>
+            )}
+          </div>
+          <div className="flex mt-2">
+            {isAuth && (
+              <Button>
+                This is day 0 of Porject goggins where I iwll go ahgea dand ada build a;ba <a href=""></a>
+              </Button>
+            )}
+          </div>
 
           <div className="w-full mt-4">
             {isAuth ? (
